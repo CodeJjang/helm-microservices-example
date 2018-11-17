@@ -1,0 +1,27 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "1.2.0",
+    "cra-append-sw": "^2.5.0",
+    "react": "16.4.0",
+    "react-dom": "^16.4.1",
+    "react-scripts-ts": "2.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start && cra-append-sw --mode dev ./custom-sw.js",
+    "build": "react-scripts-ts build && cra-append-sw ./custom-sw.js",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.5.4",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "babel-core": "^7.0.0-0",
+    "typescript": "2.8.x"
+  }
+}

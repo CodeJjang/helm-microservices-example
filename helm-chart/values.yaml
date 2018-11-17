@@ -1,0 +1,6 @@
+cra-frontend:
+  image:
+    tag: v1
+cra-backend:
+  image:
+    tag: v1

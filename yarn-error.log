@@ -1,0 +1,29 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add react-scripts-ts@2.13.0
+
+PATH: 
+  /home/aviad/miniconda2/bin:/home/aviad/bin:/home/aviad/.local/bin:/home/aviad/miniconda2/bin:/home/aviad/bin:/home/aviad/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com:443
+      at Object._errnoException (util.js:1022:11)
+      at errnoException (dns.js:55:15)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

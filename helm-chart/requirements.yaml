@@ -1,0 +1,7 @@
+dependencies:
+  - name: cra-frontend
+    version: 0.1.0
+    repository: file://../my-app/frontend-chart
+  - name: cra-backend
+    version: 0.1.0
+    repository: file://../server/server-chart
