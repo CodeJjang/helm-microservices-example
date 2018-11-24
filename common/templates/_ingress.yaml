@@ -9,13 +9,7 @@
 {{- with merge $noValues $overrides $common -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
-metadata:
-  name: {{ $fullName }}
-  labels:
-    app.kubernetes.io/name: {{ include "common.name" . }}
-    helm.sh/chart: {{ include "common.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{ template "common.metadata" . }}
 {{- with .Values.ingress.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
