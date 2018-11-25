@@ -3,13 +3,9 @@ import { StyleRules } from "@material-ui/core/styles";
 import * as React from "react";
 
 const styles = (theme: Theme): StyleRules => ({
-    blat: {
-        
-    },
     root: {
         fontSize: '35px'
-    },
-    vlat: {}
+    }
 });
 
 interface IMyState {
