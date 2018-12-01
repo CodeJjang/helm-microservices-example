@@ -27,8 +27,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - name: {{ include "common.fullname" . }}
-            mountPath: /code/.env
-            subPath: .env
+            mountPath: {{ .Values.configmap.volumeMounts.mountPath }}
+            subPath: {{ .Values.configmap.volumeMounts.subPath }}
           ports:
             - name: http
               containerPort: 80

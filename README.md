@@ -16,4 +16,6 @@ Next, simply install the Umbrella chart:
 helm install helm-chart
 ```
 
-There are several ways to override specific subcharts values, all detailed in the aforementioned Medium post.
+### Configuration
+There are several ways to override specific subcharts values, all detailed in the aforementioned Medium post.  
+However, each subchart should contain it's own config inside the chart path (i.e. the `.env` file).
