@@ -4,5 +4,5 @@ kind: ConfigMap
 {{ template "common.metadata" . }}
 data:
   .env: |-
-{{ .Files.Get "dotenv" | indent 4 }}
+{{ .Files.Get ".env" | indent 4 }}
 {{- end -}}

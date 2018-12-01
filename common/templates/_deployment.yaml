@@ -25,6 +25,10 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}/{{ template "common.name" . }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+          - name: {{ include "common.fullname" . }}
+            mountPath: /code/.env
+            subPath: .env
           ports:
             - name: http
               containerPort: 80
@@ -39,6 +43,10 @@ spec:
               port: http
           resources:
 {{ toYaml .Values.resources | indent 12 }}
+      volumes:
+        - name: {{ include "common.fullname" . }}
+          configMap:
+            name: {{ include "common.fullname" . }}
     {{- with .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
@@ -51,5 +59,6 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
+
 {{- end -}}
 {{- end -}}
