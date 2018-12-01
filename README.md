@@ -1,5 +1,5 @@
 # Helm Microservices Example
-This repo serves as an example regarding how to create Helm charts to multiple micro-services along with an Umbrella chart.  
+This repo serves as an example regarding how to create DRY Helm charts to multiple micro-services along with an Umbrella chart.  
 For further reading about the underlying details, please refer to the [Medium post]().
 
 ## Requirements
