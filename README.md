@@ -1,6 +1,6 @@
 # Helm Microservices Example
 This repo serves as an example regarding how to create DRY Helm charts to multiple micro-services along with an Umbrella chart.  
-For further reading about the underlying details, please refer to the [Medium post]().
+For further reading about the underlying details, please refer to the [Medium post](https://medium.com/faun/dry-helm-charts-for-micro-services-db3a1d6ecb80).
 
 ## Requirements
 Make sure your `kubectl` is configured to talk to some K8S cluster, and your `helm` client is initialized.
