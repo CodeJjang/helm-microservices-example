@@ -6,7 +6,7 @@
     "@material-ui/core": "1.2.0",
     "cra-append-sw": "^2.5.0",
     "react": "16.4.0",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-scripts-ts": "2.17.0"
   },
   "scripts": {
